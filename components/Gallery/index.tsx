@@ -6,9 +6,7 @@ import { Home, ArrowLeft, ArrowRight } from "../../public/";
 import { useAppSelector, useAppDispatch } from "../../hooks/hooks";
 import { nextPage, prevPage, firstPage } from "../../store/gallerySlice";
 
-interface IGallery {}
-
-export const Gallery = ({}: IGallery) => {
+export const Gallery = () => {
   const dispatch = useAppDispatch();
   const imagesToDisplay = useAppSelector((state) => state.gallery.slicedImages);
 
