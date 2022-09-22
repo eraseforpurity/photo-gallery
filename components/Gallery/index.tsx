@@ -22,9 +22,11 @@ export const Gallery = () => {
   const handleNextClick = () => {
     dispatch(nextPage());
   };
+
   const handlePrevClick = () => {
     dispatch(prevPage());
   };
+
   const handleHomeClick = () => {
     dispatch(firstPage());
   };
@@ -36,6 +38,7 @@ export const Gallery = () => {
       <p className={styles.description}>{description}</p>
 
       <div className={styles.gallery}>{currentImages}</div>
+
       <div className={styles.controls}>
         <Button onClick={handlePrevClick}>
           <ArrowLeft />
