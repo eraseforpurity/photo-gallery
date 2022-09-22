@@ -2,8 +2,43 @@
   border: 2px dashed grey;
   height: 300px;
   display: flex;
+  z-index: 1;
 
   div {
     margin: auto;
+  }
+
+  .drop {
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+.over {
+  border: 4px dashed darkblue;
+  animation-name: flash_border;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash_border {
+  0% {
+    border-color: darkblue;
+  }
+  20% {
+    border-color: red;
+  }
+  40% {
+    border-color: yellow;
+  }
+  60% {
+    border-color: black;
+  }
+  80% {
+    border-color: rgb(11, 253, 31);
+  }
+  100% {
+    border-color: rgb(127, 15, 131);
   }
 }
