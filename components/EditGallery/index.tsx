@@ -38,8 +38,11 @@ export const EditGallery = () => {
   return (
     <div className={styles.container}>
       <input onChange={handleTitleChange} value={title} type="text" />
+
       <textarea onChange={handleDescChange} value={description} rows={2} />
+
       <DropZone onDrop={handleDrop} />
+
       <button
         onClick={handleDeletePhotos}
         className={styles.button}

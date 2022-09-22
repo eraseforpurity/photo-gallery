@@ -8,6 +8,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <EditGallery />
+
         <Gallery />
       </main>
     </div>

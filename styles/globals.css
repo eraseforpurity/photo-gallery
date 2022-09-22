@@ -11,10 +11,6 @@ body {
   height: 100%;
 }
 
-body {
-  line-height: 1.5;
-}
-
 img,
 picture,
 video,
@@ -55,7 +51,7 @@ a {
 }
 
 body {
-  margin: 0;
+  line-height: 1.5;
   font-family: -apple-system, "SF Pro Display", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
